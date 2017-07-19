@@ -1,9 +1,8 @@
-from adafruit.Adafruit_MotorHAT import Adafruit_MotorHAT, Adafruit_DCMotor, Adafruit_StepperMotor
+import sys
+sys.path.append('../../')
+from Adafruit_MotorHAT import Adafruit_MotorHAT
 from flask import Flask
 application = Flask(__name__)
-
-import time
-import atexit
 
 mh = Adafruit_MotorHAT(addr=0x60)
 
